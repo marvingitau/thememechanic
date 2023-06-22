@@ -1,0 +1,11 @@
+//Partials
+@use'./Header/Header';
+
+//DRY - use mixin
+@mixin Theme($theme:DarkGray){
+    background-color: $theme;
+}
+
+.info{
+    @include Theme;
+}
